@@ -1,4 +1,5 @@
 #!/bin/bash
+cd "$(dirname "${BASH_SOURCE[0]}")"
 
 function download_sounds {
     mkdir sounds && cd sounds
