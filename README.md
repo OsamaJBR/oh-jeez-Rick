@@ -16,7 +16,7 @@ $ source ~/.bashrc
 
 ## List Sounds
 ```
-[osama@echo2 ohJezRick]$ bash ohjeezrick.sh list
+[osama@echo2]$ ohjeezRick list
 Sounds 
 --------------
 28212
@@ -49,22 +49,22 @@ Total= 56 files
 * It's case-insensitive
 * Partial search
 ```
-[osama@echo2 ohJezRick]$ bash ohjeezrick.sh search mees
+[osama@echo2 ]$ ohjeezRick search mees
 # this will play Hi_I'm_mr_meeseeks_look_at_me.wav
 ```
 ## Fortune
 * Play a random sound file.
 * It's the default behavior of this script.
 ```
-[osama@echo2 ohJezRick]$ bash ohjeezrick.sh fortune
-[osama@echo2 ohJezRick]$ bash ohjeezrick.sh
+[osama@echo2 ]$ bohjeezRick fortune
+[osama@echo2 ]$ ohjeezRick
 ```
 
 ## Play
 * Play a sound file directly.
 * You can list files name the listing command.
 ```
-[osama@echo2 ohJezRick]$ bash ohjeezrick.sh play "Show_me_what_you_got!.wav"
+[osama@echo2 ]$ ohjeezRick play "Show_me_what_you_got!.wav"
 ```
 
 # Thanks for sound.peal.io, they are the source of sound files.
