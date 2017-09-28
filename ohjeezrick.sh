@@ -2,8 +2,8 @@
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
 function download_sounds {
-    mkdir sounds && cd sounds
-    cat ../soundslinks | while read link;
+    mkdir -p sounds && cd sounds
+    cat ../soundslink | while read link;
         do
             wget $link
         done

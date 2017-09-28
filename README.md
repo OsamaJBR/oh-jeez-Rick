@@ -58,3 +58,5 @@ Total= 56 files
 ```
 [osama@echo2 ohJezRick]$ bash ohjeezrick.sh play "Show_me_what_you_got!.wav"
 ```
+
+# Thanks for sound.peal.io, they are the source of sound files.
