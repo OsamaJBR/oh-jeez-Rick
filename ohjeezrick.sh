@@ -33,10 +33,10 @@ command="$1" ; shift
 case "$command" in
   list)
     cd sounds && \
-        echo -e "Sounds \n--------------" && \
-        ls -l | awk '{print $NF}' && \
-        echo -e "----------------\nTotal= `ls -l | wc -l` files"
-    aplay 'Show_me_what_you_got!.wav' &> /dev/null
+    aplay 'Show_me_what_you_got!.wav' &> /dev/null  &
+    echo -e "Sounds \n--------------" && \
+    cd sounds && ls -l | awk '{print $NF}' && \
+    echo -e "----------------\nTotal= `ls -l | wc -l` files"
     ;;
   search)
     cd sounds
