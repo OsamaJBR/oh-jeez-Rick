@@ -4,6 +4,14 @@
  <img src="logo.webp"/>
 </p>
 
+# How To Setup
+```
+$ CLONE_PATH=/where/to/clone
+$ git clone git@github.com:OsamaJBR/oh-jeez-Rick.git -o $CLONE_PATH/oh-jeez-Rick
+$ echo alias ohjeezRick="bash $CLONE_PATH/oh-jeez-Rick/ohjeezrick.sh" >> ~/.bashrc
+$ source ~/.bashrc
+```
+
 # How To Use
 
 ## List Sounds
