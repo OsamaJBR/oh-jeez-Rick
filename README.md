@@ -56,7 +56,7 @@ Total= 56 files
 * Play a random sound file.
 * It's the default behavior of this script.
 ```
-[osama@echo2 ]$ bohjeezRick fortune
+[osama@echo2 ]$ ohjeezRick fortune
 [osama@echo2 ]$ ohjeezRick
 ```
 
