@@ -68,7 +68,7 @@ Total= 56 files
 ```
 
 ## Update
-* Find new link in the original repo and download them
+* Find new links in the original repo and download them
 ```
 [osama@echo2 ]$ ohjeezRick update
 ```
