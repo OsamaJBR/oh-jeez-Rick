@@ -2,12 +2,25 @@
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
 function download_sounds {
-    mkdir -p sounds && cd sounds
+    mkdir -p sounds
+    cd sounds
     cat ../soundslink | while read link;
         do
             wget $link
         done
     echo "Downloading sounds is done."
+}
+
+function update_sounds {
+    mkdir -p sounds 
+    cd sounds
+    wget https://raw.githubusercontent.com/OsamaJBR/oh-jeez-Rick/master/soundslink -O /tmp/new_sounds
+    diff ../soundslink /tmp/new_sounds | grep '>' | awk '{print $2}' | while read link;
+	do
+	    wget $link
+	done
+    diff ../soundslink /tmp/new_sounds | grep '>' | awk '{print $2}' >> ../soundslink
+    echo "Downloading new sounds is done."
 }
 
 SOUNDS=()
@@ -22,6 +35,7 @@ if [ ${#SOUNDS[@]} -eq 0 ]; then
     echo "Oh Jez Rick ! You don't have sounds folder."
     echo "Morty, I need to wait till I download them for you."
     download_sounds
+    exit 0
 fi
 
 which aplay > /dev/null 2>&1 || {
@@ -50,6 +64,9 @@ case "$command" in
   play)
     cd sounds
     aplay "$@" &> /dev/null
+    ;;
+  update)
+    update_sounds
     ;;
   fortuneRicky|*)
     cd sounds
