@@ -67,4 +67,11 @@ Total= 56 files
 [osama@echo2 ]$ ohjeezRick play "Show_me_what_you_got!.wav"
 ```
 
+## Update
+* Find new link in the original repo and download them
+```
+[osama@echo2 ]$ ohjeezRick update
+```
+
+
 # Thanks for sound.peal.io, they are the source of sound files.
