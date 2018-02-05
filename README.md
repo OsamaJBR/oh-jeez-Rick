@@ -8,6 +8,7 @@
 ```
 $ CLONE_PATH=/where/to/clone
 $ git clone https://github.com/OsamaJBR/oh-jeez-Rick.git $CLONE_PATH/oh-jeez-Rick
+$ chmod +x $CLONE_PATH/oh-jeez-Rick/ohjeezrick.sh
 $ echo alias ohjeezRick=\"bash $CLONE_PATH/oh-jeez-Rick/ohjeezrick.sh\" >> ~/.bashrc
 $ source ~/.bashrc
 ```
